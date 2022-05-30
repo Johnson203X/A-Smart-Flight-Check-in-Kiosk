@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ebu.groupone.iteration.Controller.PrintController">
+   <ImageView fitHeight="506.0" fitWidth="1233.0" layoutX="-7.0" layoutY="-73.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../Pictures/lugage.PNG" />
+      </image>
+   </ImageView>
+    <BorderPane prefHeight="800.0" prefWidth="1203.0">
+        <top>
+            <AnchorPane prefHeight="93.0" prefWidth="1203.0">
+                <children>
+                    <ImageView fitHeight="50.0" fitWidth="321.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../Pictures/white-heathrow-logo.png" />
+                        </image>
+                    </ImageView>
+                    <ImageView fitHeight="62.0" fitWidth="64.0" layoutX="302.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../Pictures/4-Star_COVID_logo.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </AnchorPane>
+        </top>
+        <bottom>
+            <AnchorPane prefHeight="100.0" prefWidth="1202.0" styleClass="background" stylesheets="@../CSS/StyleSheet.css" BorderPane.alignment="CENTER">
+                <children>
+                    <Button id="Button_Next" fx:id="Button_Next" alignment="CENTER" contentDisplay="CENTER" layoutX="821.0" layoutY="12.0" mnemonicParsing="false" onAction="#Finish" onMouseEntered="#Enter_Next" onMouseExited="#Exit_Next" prefHeight="67.0" prefWidth="354.0" text="Finish" textFill="#878787">
+                        <font>
+                            <Font name="Arial Rounded MT Bold" size="36.0" />
+                        </font>
+                    </Button>
+                    <Button id="Button_Return" fx:id="Button_Return" alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="12.0" mnemonicParsing="false" onAction="#Return" onMouseEntered="#Enter_Return" onMouseExited="#Exit_Return" prefHeight="67.0" prefWidth="354.0" text="Return" textFill="#878787">
+                        <font>
+                            <Font name="Arial Rounded MT Bold" size="36.0" />
+                        </font>
+                    </Button>
+                    <Button id="Button_Time" fx:id="Button_Time" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="12.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="385.0" stylesheets="@../CSS/StyleSheet.css" textFill="#878787">
+                        <font>
+                            <Font name="Arial Rounded MT Bold" size="36.0" />
+                        </font>
+                    </Button>
+                </children>
+            </AnchorPane>
+        </bottom>
+        <left>
+            <AnchorPane prefHeight="607.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+        </left>
+        <right>
+            <AnchorPane prefHeight="607.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+        </right>
+      <center>
+         <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      </center>
+    </BorderPane>
+   <AnchorPane fx:id="Stage3" layoutX="-2.0" layoutY="308.0" prefHeight="393.0" prefWidth="1206.0" style="-fx-background-color: #8E7DA1;">
+      <children>
+         <ImageView fitHeight="149.0" fitWidth="154.0" layoutX="63.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/Confirm-filled.png" />
+            </image>
+         </ImageView>
+         <Label layoutX="104.0" layoutY="84.0" text="Finish" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <Label layoutX="341.0" layoutY="52.0" prefHeight="29.0" prefWidth="775.0" text="1. All check-in procedures on the kiosk have been finished" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <AnchorPane layoutX="266.0" layoutY="52.0" prefHeight="299.0" prefWidth="16.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" />
+         <Label layoutX="341.0" layoutY="89.0" prefHeight="48.0" prefWidth="821.0" text="2. Please get to the security-check for reaching your departure gate" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <Label layoutX="338.0" layoutY="136.0" prefHeight="33.0" prefWidth="793.0" text="Wish you good flight !" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="175.0" fitWidth="188.0" layoutX="647.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/security_check.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="Stage2" layoutX="-1.0" layoutY="307.0" prefHeight="393.0" prefWidth="1206.0" style="-fx-background-color: #8E7DA1;">
+      <children>
+         <ImageView fitHeight="149.0" fitWidth="154.0" layoutX="63.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/Kiosk.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="132.0" fitWidth="126.0" layoutX="682.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/luggage.png" />
+            </image>
+         </ImageView>
+         <Label layoutX="63.0" layoutY="83.0" text="Consignment" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="325.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/sticker.png" />
+            </image>
+         </ImageView>
+         <Label layoutX="341.0" layoutY="52.0" prefHeight="29.0" prefWidth="775.0" text="1. Please stick the luggage identification sticker to your luggage" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <AnchorPane layoutX="266.0" layoutY="52.0" prefHeight="299.0" prefWidth="16.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" />
+         <Label layoutX="341.0" layoutY="89.0" prefHeight="46.0" prefWidth="772.0" text="2. And put the luggage on the consignment belt" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <Label layoutX="338.0" layoutY="136.0" prefHeight="33.0" prefWidth="793.0" text="3. The Machine will detect your luggage and proceed consignment" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="149.0" fitWidth="154.0" layoutX="1000.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/ic_leather%20belt.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="61.0" fitWidth="48.0" layoutX="496.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/up.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="61.0" fitWidth="48.0" layoutX="531.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/up.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="61.0" fitWidth="48.0" layoutX="565.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/up.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="61.0" fitWidth="48.0" layoutX="840.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/up.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="61.0" fitWidth="48.0" layoutX="875.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/up.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="61.0" fitWidth="48.0" layoutX="909.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/up.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="IMG_NEXT2" fitHeight="84.0" fitWidth="86.0" layoutX="1116.0" layoutY="309.0" onMouseClicked="#FC_NEXT2" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/yes.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="Stage1" layoutX="-1.0" layoutY="308.0" prefHeight="393.0" prefWidth="1206.0" style="-fx-background-color: #8E7DA1;">
+      <children>
+         <ImageView fitHeight="124.0" fitWidth="122.0" layoutX="95.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/printer.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="338.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/print_ticket.png" />
+            </image>
+         </ImageView>
+         <Label layoutX="101.0" layoutY="80.0" text="Printing..." textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="626.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/sticker.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="IMG_NEXT" fitHeight="147.0" fitWidth="133.0" layoutX="1046.0" layoutY="197.0" onMouseClicked="#FC_NEXT1" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/yes.png" />
+            </image>
+         </ImageView>
+         <Label layoutX="1015.0" layoutY="335.0" text="&gt;&gt;&gt; Next Step" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <Label layoutX="341.0" layoutY="52.0" prefHeight="21.0" prefWidth="649.0" text="1. Please get your ticket from the below deck" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <AnchorPane layoutX="266.0" layoutY="52.0" prefHeight="299.0" prefWidth="16.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" />
+         <Label layoutX="341.0" layoutY="89.0" prefHeight="46.0" prefWidth="772.0" text="2. Along with the ticket is your luggage identification sticker" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <Label layoutX="338.0" layoutY="136.0" prefHeight="36.0" prefWidth="725.0" text="3. You may proceed when you obtain the 2 essential outlets" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="Script" layoutX="850.0" layoutY="14.0" prefHeight="291.0" prefWidth="305.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-color: #000000; -fx-border-width: 10;">
+      <children>
+         <Label layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="263.0" text="&gt;&gt;&gt;Luggage Script">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <Label layoutX="14.0" layoutY="77.0" prefHeight="32.0" prefWidth="168.0" text="&gt;&gt;&gt;Flight:">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <Label layoutX="14.0" layoutY="144.0" prefHeight="32.0" prefWidth="210.0" text="&gt;&gt;&gt;Passenger:">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <Label layoutX="14.0" layoutY="208.0" prefHeight="32.0" prefWidth="251.0" text="&gt;&gt;&gt;Luggage Code:">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <AnchorPane layoutX="7.0" layoutY="59.0" prefHeight="6.0" prefWidth="296.0" style="-fx-background-color: #000000; -fx-background-radius: 30;" />
+         <Label fx:id="Flight" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="109.0" prefHeight="32.0" prefWidth="290.0" text="null">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <Label fx:id="Passenger" alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="176.0" prefHeight="32.0" prefWidth="279.0" text="null">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <Label fx:id="Luggage_Code" alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="240.0" prefHeight="32.0" prefWidth="279.0" text="null">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="Warning" layoutX="-1.0" layoutY="92.0" prefHeight="707.0" prefWidth="1257.0" style="-fx-background-color: #198087;">
+      <children>
+         <Label layoutX="130.0" layoutY="7.0" prefHeight="61.0" prefWidth="887.0" text="For safety reasons, the following items cannot be taken on to an aircraft. " textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <Label layoutX="423.0" layoutY="49.0" prefHeight="61.0" prefWidth="765.0" text="Please do not pack them in either hand baggage or hold luggage." textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="28.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="84.0" fitWidth="84.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/denied.png" />
+            </image>
+         </ImageView>
+         <Label layoutX="48.0" layoutY="117.0" prefHeight="61.0" prefWidth="389.0" text="Flammable liquids and solids" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="51.0" layoutY="179.0" prefHeight="61.0" prefWidth="452.0" text="Oxidisers such as bleaching powders" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="51.0" layoutY="301.0" prefHeight="61.0" prefWidth="221.0" text="Organic peroxides" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="50.0" layoutY="364.0" prefHeight="61.0" prefWidth="443.0" text="Tear gas devices or any gas cylinders" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="48.0" layoutY="419.0" prefHeight="61.0" prefWidth="586.0" text="Infectious substances such as live virus materials" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="48.0" layoutY="468.0" prefHeight="61.0" prefWidth="263.0" text="Wet-cell car batteries" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="47.0" layoutY="516.0" prefHeight="61.0" prefWidth="539.0" text="Magnetrons. Instruments containing mercury" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="561.0" layoutY="179.0" prefHeight="61.0" prefWidth="389.0" text="Fireworks and pyrotechnics" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="48.0" layoutY="240.0" prefHeight="61.0" prefWidth="389.0" text="Non-safety matches" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="561.0" layoutY="117.0" prefHeight="61.0" prefWidth="389.0" text="Instruments containing magnets" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="561.0" layoutY="301.0" prefHeight="61.0" prefWidth="389.0" text="Poisons, arsenic, cyanide, weedkiller" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="561.0" layoutY="240.0" prefHeight="61.0" prefWidth="389.0" text="Fire lighter, lighter fuel, paints, thinners" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="561.0" layoutY="529.0" prefHeight="36.0" prefWidth="539.0" text="Explosives, ammunition, detonators and related equipment" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="561.0" layoutY="468.0" prefHeight="61.0" prefWidth="389.0" text="Creosote, quicklime, oiled paper" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="561.0" layoutY="364.0" prefHeight="61.0" prefWidth="525.0" text="Radioactive materials, acids, corrosives, alkalis, caustic soda" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="47.0" layoutY="565.0" prefHeight="61.0" prefWidth="539.0" text="Smoke canisters and smoke cartridges." textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="561.0" layoutY="419.0" prefHeight="61.0" prefWidth="539.0" text="Vehicle fuel system components which have contained fuel" textFill="WHITE">
+            <font>
+               <Font name="Calibri Bold Italic" size="20.0" />
+            </font>
+         </Label>
+         <CheckBox fx:id="Confirm" layoutX="48.0" layoutY="625.0" mnemonicParsing="false" text="I've read all notice carefully and confirmed that my consignment did not contain the following not permitted items." textFill="WHITE">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </CheckBox>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="1076.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/radioactive.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="1076.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/poison.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="493.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/matchstick.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="493.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/gas.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="493.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/gasoline.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="493.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/battery.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="1076.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/firework.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="493.0" layoutY="572.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/smoke_fill.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="1076.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/Explosive.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="493.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/infectious.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="493.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/powder.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="1076.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/magnet.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="493.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/liquid-fill.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="493.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/leaf.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="1076.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/fire.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="1076.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/oil-fill.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="1076.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Pictures/vehicles.png" />
+            </image>
+         </ImageView>
+         <Button fx:id="Confirmed" layoutX="1038.0" layoutY="656.0" mnemonicParsing="false" onMouseClicked="#Confirmed_Next" text="&gt;&gt;&gt;Next&gt;&gt;&gt;" />
+      </children>
+   </AnchorPane>
+</AnchorPane>

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ebu.groupone.iteration.Controller.IdentifyController">
+   <AnchorPane layoutX="-186.0" layoutY="395.0" prefHeight="313.0" prefWidth="1417.0" style="-fx-background-color: #685182;">
+      <children>
+         <Label alignment="CENTER" layoutX="497.0" layoutY="124.0" prefHeight="51.0" prefWidth="614.0" text="&gt;&gt;&gt; You May Proceed &gt;&gt;&gt;" textAlignment="CENTER" textFill="WHITE">
+            <font>
+               <Font name="Consolas" size="20.0" />
+            </font>
+            <effect>
+               <Blend mode="SCREEN" />
+            </effect>
+         </Label>
+         <Label alignment="CENTER" layoutX="497.0" layoutY="31.0" prefHeight="51.0" prefWidth="614.0" text="Verification Passed" textAlignment="CENTER" textFill="WHITE">
+            <font>
+               <Font name="Consolas" size="50.0" />
+            </font>
+            <effect>
+               <Blend mode="SCREEN" />
+            </effect>
+         </Label>
+         <Label alignment="CENTER" layoutX="497.0" layoutY="189.0" prefHeight="51.0" prefWidth="614.0" text="&gt;&gt;&gt; Click on the 'Next' for further action &gt;&gt;&gt;" textAlignment="CENTER" textFill="WHITE">
+            <font>
+               <Font name="Consolas" size="20.0" />
+            </font>
+            <effect>
+               <Blend mode="SCREEN" />
+            </effect>
+         </Label>
+      </children>
+   </AnchorPane>
+   <ImageView fitHeight="908.0" fitWidth="1203.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../Pictures/Identify_Background.jpg" />
+      </image>
+   </ImageView>
+    <BorderPane prefHeight="800.0" prefWidth="1200.0">
+       <bottom>
+           <AnchorPane prefHeight="100.0" prefWidth="1202.0" styleClass="background" stylesheets="@../CSS/StyleSheet.css" BorderPane.alignment="CENTER">
+               <children>
+                   <Button id="Button_Next" fx:id="Button_Next" alignment="CENTER" contentDisplay="CENTER" layoutX="821.0" layoutY="12.0" mnemonicParsing="false" onAction="#Next" onMouseEntered="#Enter_Next" onMouseExited="#Exit_Next" prefHeight="67.0" prefWidth="354.0" text="Next" textFill="#878787">
+                       <font>
+                           <Font name="Arial Rounded MT Bold" size="36.0" />
+                       </font>
+                   </Button>
+                   <Button id="Button_Return" fx:id="Button_Return" alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="12.0" mnemonicParsing="false" onAction="#Return" onMouseEntered="#Enter_Return" onMouseExited="#Exit_Return" prefHeight="67.0" prefWidth="354.0" text="Return" textFill="#878787">
+                       <font>
+                           <Font name="Arial Rounded MT Bold" size="36.0" />
+                       </font>
+                   </Button>
+                   <Button id="Button_Time" fx:id="Button_Time" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="12.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="385.0" stylesheets="@../CSS/StyleSheet.css" textFill="#878787">
+                       <font>
+                           <Font name="Arial Rounded MT Bold" size="36.0" />
+                       </font>
+                   </Button>
+               </children>
+           </AnchorPane>
+       </bottom>
+       <left>
+          <AnchorPane prefHeight="560.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+       </left>
+       <right>
+          <AnchorPane prefHeight="560.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+       </right>
+      <center>
+         <AnchorPane fx:id="Functions" prefHeight="671.0" prefWidth="1187.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="93.0" prefWidth="1203.0">
+                    <children>
+                        <ImageView fitHeight="50.0" fitWidth="321.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Pictures/white-heathrow-logo.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="62.0" fitWidth="64.0" layoutX="302.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Pictures/4-Star_COVID_logo.png" />
+                            </image>
+                        </ImageView>
+                     <Label fx:id="Label_Help" alignment="CENTER" layoutX="701.0" layoutY="29.0" onMouseClicked="#Help_Extended" prefHeight="35.0" prefWidth="482.0" text="Need help with problems &amp; Forget Info" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" underline="true">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <ImageView fx:id="Help_icon" fitHeight="54.0" fitWidth="48.0" layoutX="683.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/help.png" />
+                        </image>
+                     </ImageView>
+                    </children>
+                </AnchorPane>
+               <AnchorPane fx:id="Manual_AnchorPane" layoutX="300.0" layoutY="398.0" onMouseClicked="#Manual_Extension" prefHeight="310.0" prefWidth="300.0" style="-fx-background-color: #9F167C;">
+                  <children>
+                     <Label alignment="CENTER" layoutX="31.0" layoutY="14.0" prefHeight="101.0" prefWidth="238.0" text="Manual Input" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <ImageView fitHeight="125.0" fitWidth="169.0" layoutX="67.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/keyboard.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </AnchorPane>
+               <AnchorPane fx:id="ID_AnchorPane" layoutY="398.0" onMouseClicked="#ID_Extension" prefHeight="310.0" prefWidth="300.0" style="-fx-background-color: #F166F1;">
+                  <children>
+                     <Label alignment="CENTER" layoutX="22.0" layoutY="14.0" prefHeight="101.0" prefWidth="238.0" text="ID card &amp; Passport" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <ImageView fitHeight="131.0" fitWidth="148.0" layoutX="61.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/id-card.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </AnchorPane>
+               <AnchorPane fx:id="Flight_AnchorPane" layoutX="600.0" layoutY="398.0" onMouseClicked="#Flight_Extension" prefHeight="310.0" prefWidth="300.0" style="-fx-background-color: #6D308D;">
+                  <children>
+                     <Label alignment="CENTER" layoutX="26.0" layoutY="11.0" prefHeight="101.0" prefWidth="238.0" text="Flight Info" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <ImageView fitHeight="125.0" fitWidth="169.0" layoutX="83.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/flight.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </AnchorPane>
+               <Label fx:id="Label_Notice" layoutX="14.0" layoutY="301.0" prefHeight="137.0" prefWidth="916.0" text="Continue with following identification methods:" textAlignment="CENTER" textFill="WHITE">
+                  <font>
+                     <Font name="Consolas" size="34.0" />
+                  </font>
+                  <effect>
+                     <Blend mode="SCREEN" />
+                  </effect>
+               </Label>
+               <AnchorPane fx:id="Scan_Extended" layoutX="355.0" layoutY="63.0" prefHeight="324.0" prefWidth="485.0" style="-fx-background-color: #462170; -fx-background-radius: 20;">
+                  <children>
+                     <Label alignment="CENTER" layoutX="28.0" layoutY="56.0" prefHeight="42.0" prefWidth="461.0" text="Continue The Verification On Your Phone" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <ImageView fitHeight="183.0" fitWidth="192.0" layoutX="154.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/Example_QR.png" />
+                        </image>
+                     </ImageView>
+                     <Label alignment="CENTER" layoutX="28.0" layoutY="14.0" prefHeight="42.0" prefWidth="463.0" text="Scan the QR Code &amp;" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                  </children>
+               </AnchorPane>
+               <AnchorPane fx:id="ID_Extended" layoutX="19.0" layoutY="82.0" prefHeight="302.0" prefWidth="1162.0" style="-fx-background-color: #F166F1; -fx-background-radius: 20;">
+                  <children>
+                     <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="140.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/Insert.png" />
+                        </image>
+                     </ImageView>
+                     <Label alignment="CENTER" layoutX="36.0" layoutY="14.0" prefHeight="88.0" prefWidth="360.0" text="Please Insert Your ID Card" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <Label alignment="CENTER" layoutX="479.0" layoutY="24.0" prefHeight="68.0" prefWidth="66.0" text="Or" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="50.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <Label alignment="CENTER" layoutX="552.0" layoutY="14.0" prefHeight="87.0" prefWidth="596.0" text="Place Your Passport At The Kiosk Identification Area" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <AnchorPane layoutX="419.0" layoutY="26.0" prefHeight="249.0" prefWidth="9.0" style="-fx-background-color: #FFD000; -fx-background-radius: 10;" />
+                     <ImageView fitHeight="177.0" fitWidth="174.0" layoutX="888.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/Kiosk.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fitHeight="172.0" fitWidth="209.0" layoutX="545.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/password.png" />
+                        </image>
+                     </ImageView>
+                     <Label alignment="CENTER" layoutX="742.0" layoutY="127.0" prefHeight="83.0" prefWidth="145.0" text="&gt;&gt;&gt;" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Comic Sans MS" size="71.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                  </children>
+               </AnchorPane>
+               <AnchorPane fx:id="Scan_AnchorPane" layoutX="900.0" layoutY="398.0" onMouseClicked="#Scan_Extension" prefHeight="310.0" prefWidth="300.0" style="-fx-background-color: #462170;">
+                  <children>
+                     <Label alignment="CENTER" layoutX="19.0" layoutY="14.0" prefHeight="101.0" prefWidth="261.0" text="Heathrow App QR Scan" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/scanning.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </AnchorPane>
+               <AnchorPane fx:id="Manual_Extended" layoutX="94.0" layoutY="84.0" prefHeight="299.0" prefWidth="977.0" style="-fx-background-color: #9F167C; -fx-background-radius: 20;">
+                  <children>
+                     <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="81.0" prefWidth="933.0" text="Please Manually Input Your Available Verification Information For Us To Identify You" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <Label alignment="CENTER_RIGHT" layoutY="137.0" prefHeight="81.0" prefWidth="183.0" text="ID Number" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <TextField fx:id="FlightNumber" layoutX="282.0" layoutY="94.0" stylesheets="@../CSS/StyleSheet.css" />
+                     <Label alignment="CENTER_RIGHT" layoutX="8.0" layoutY="75.0" prefHeight="81.0" prefWidth="183.0" text="Booking Number" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <TextField fx:id="IDNumber" layoutX="282.0" layoutY="156.0" stylesheets="@../CSS/StyleSheet.css" />
+                     <TextField fx:id="FullName" layoutX="282.0" layoutY="219.0" stylesheets="@../CSS/StyleSheet.css" />
+                     <Label alignment="CENTER_RIGHT" layoutY="199.0" prefHeight="81.0" prefWidth="183.0" text="Surname" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="201.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/id-card.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="201.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/ticket.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="201.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/stuff%20surveys.png" />
+                        </image>
+                     </ImageView>
+                     <Button id="Button_Next" fx:id="Button_Verify" alignment="CENTER" contentDisplay="CENTER" layoutX="709.0" layoutY="128.0" mnemonicParsing="false" onMouseClicked="#Verify" prefHeight="89.0" prefWidth="249.0" text="Verify" textFill="#878787">
+                        <font>
+                           <Font name="Arial Rounded MT Bold" size="36.0" />
+                        </font>
+                     </Button>
+                     <ImageView fx:id="FlightNumber_Keyboard" fitHeight="33.0" fitWidth="44.0" layoutX="602.0" layoutY="100.0" onMouseClicked="#Input_FlightNumber" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/keyboard.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fx:id="IDNumber_Keyboard" fitHeight="33.0" fitWidth="44.0" layoutX="602.0" layoutY="162.0" onMouseClicked="#Input_IDNumber" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/keyboard.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fx:id="FullName_Keyboard" fitHeight="33.0" fitWidth="44.0" layoutX="602.0" layoutY="223.0" onMouseClicked="#Input_FullName" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/keyboard.png" />
+                        </image>
+                     </ImageView>
+                     <Label fx:id="Label_FLN" alignment="CENTER" layoutX="657.0" layoutY="89.0" prefHeight="54.0" prefWidth="52.0" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <Label fx:id="Label_IN" alignment="CENTER" layoutX="657.0" layoutY="151.0" prefHeight="54.0" prefWidth="52.0" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <Label fx:id="Label_FN" alignment="CENTER" layoutX="657.0" layoutY="215.0" prefHeight="54.0" prefWidth="52.0" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                  </children>
+               </AnchorPane>
+               <AnchorPane fx:id="Flight_Extended" layoutX="150.0" layoutY="78.0" prefHeight="311.0" prefWidth="885.0" style="-fx-background-color: #6D308D; -fx-background-radius: 20;">
+                  <children>
+                     <Label alignment="CENTER" layoutX="14.0" layoutY="17.0" prefHeight="51.0" prefWidth="614.0" text="You May Look For The Flight And Affiliated Info Here Of" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Consolas" size="20.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <TextField fx:id="FlightInfo" layoutX="250.0" layoutY="92.0" prefHeight="54.0" prefWidth="312.0" stylesheets="@../CSS/StyleSheet.css" />
+                     <Button id="Button_Next" fx:id="Button_Search" alignment="CENTER" contentDisplay="CENTER" layoutX="592.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#Search" prefHeight="38.0" prefWidth="224.0" text="Search" textFill="#878787">
+                        <font>
+                           <Font name="Arial Rounded MT Bold" size="36.0" />
+                        </font>
+                     </Button>
+                     <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="23.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/white-heathrow-logo.png" />
+                        </image>
+                     </ImageView>
+                     <BorderPane fx:id="Border_Flight" layoutX="15.0" layoutY="166.0" prefHeight="119.0" prefWidth="855.0" />
+                  </children>
+               </AnchorPane>
+               <BorderPane fx:id="Keyboard" layoutX="88.0" layoutY="383.0" prefHeight="287.0" prefWidth="993.0" style="-fx-background-color: #198087; -fx-background-radius: 20;" stylesheets="@../CSS/StyleSheet.css">
+                  <left>
+                     <AnchorPane prefHeight="199.0" prefWidth="64.0" BorderPane.alignment="CENTER" />
+                  </left>
+                  <right>
+                     <AnchorPane prefHeight="188.0" prefWidth="51.0" BorderPane.alignment="CENTER" />
+                  </right>
+                  <top>
+                     <AnchorPane prefHeight="47.0" prefWidth="603.0" BorderPane.alignment="CENTER">
+                        <children>
+                           <Label alignment="CENTER" layoutX="287.0" prefHeight="51.0" prefWidth="465.0" text="Software Keyboard" textAlignment="CENTER" textFill="WHITE">
+                              <font>
+                                 <Font name="Consolas" size="20.0" />
+                              </font>
+                              <effect>
+                                 <Blend mode="SCREEN" />
+                              </effect>
+                           </Label>
+                        </children>
+                     </AnchorPane>
+                  </top>
+                  <bottom>
+                     <AnchorPane prefHeight="48.0" prefWidth="603.0" BorderPane.alignment="CENTER" />
+                  </bottom>
+               </BorderPane>
+            </children>
+         </AnchorPane>
+      </center>
+      <top>
+         <AnchorPane prefHeight="0.0" prefWidth="1200.0" BorderPane.alignment="CENTER" />
+      </top>
+    </BorderPane>
+</AnchorPane>

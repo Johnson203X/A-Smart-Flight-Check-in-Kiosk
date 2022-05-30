@@ -1,0 +1,39 @@
+.background {
+    -fx-background-color: #2B0B50;
+    -fx-background:transparent;
+}
+
+.button {
+    -fx-padding: 5 22 5 22;
+    /*-fx-border-color: #FFFFFF;*/
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #FFD000;
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size: 18pt;
+    -fx-text-fill: #000000;
+    -fx-border-radius: 10;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-background-radius: 10;
+    -fx-text-alignment: CENTER;
+}
+
+.text-field {
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size: 18pt;
+    -fx-text-fill: #2B0B50;
+    -fx-background-radius: 10;
+    -fx-background-color: #DADEE2;
+}
+
+.label {
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size: 18pt;
+    -fx-text-fill: #787878;
+}
+
+.text-area {
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size: 18pt;
+    -fx-text-fill: #787878;
+}

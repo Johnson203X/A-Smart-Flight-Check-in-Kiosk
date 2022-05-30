@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Welcome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ebu.groupone.iteration.Controller.MainController">
+   <BorderPane prefHeight="800.0" prefWidth="1200.0">
+      <left>
+         <AnchorPane prefHeight="653.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+      </left>
+      <top>
+         <FlowPane prefHeight="0.0" prefWidth="1200.0" BorderPane.alignment="CENTER" />
+      </top>
+      <center>
+         <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+               <ImageView fx:id="Image_Background" fitHeight="718.0" fitWidth="1217.0" layoutX="-16.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Pictures/Main_Background.png" />
+                  </image>
+               </ImageView>
+               <AnchorPane fx:id="Label_Top" onMouseEntered="#Enter_Label" onMouseExited="#Exit_Label" prefHeight="93.0" prefWidth="1203.0">
+                  <children>
+                     <ImageView fitHeight="50.0" fitWidth="321.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/white-heathrow-logo.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fitHeight="62.0" fitWidth="64.0" layoutX="302.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/4-Star_COVID_logo.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </AnchorPane>
+               <AnchorPane fx:id="Functon_AnchorPane" layoutY="446.0" onMouseEntered="#Enter_AnchorPane" onMouseExited="#Exit_AnchorPane" prefHeight="251.0" prefWidth="1203.0">
+                  <effect>
+                     <Blend mode="SCREEN" />
+                  </effect>
+                  <children>
+                     <Label layoutX="127.0" layoutY="35.0">
+                        <font>
+                           <Font size="87.0" />
+                        </font>
+                     </Label>
+                     <ImageView fx:id="Generate_Data" fitHeight="170.0" fitWidth="176.0" layoutX="5.0" layoutY="79.0" onMouseClicked="#Generating" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Pictures/Processing.png" />
+                        </image>
+                     </ImageView>
+                     <Label fx:id="Progress" alignment="BOTTOM_RIGHT" layoutX="870.0" layoutY="80.0" prefHeight="70.0" prefWidth="309.0" text="0%" textFill="#e9e4e4">
+                        <font>
+                           <Font name="Comic Sans MS Bold" size="50.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <Label fx:id="Progress_Data" alignment="TOP_RIGHT" layoutX="855.0" layoutY="164.0" prefHeight="70.0" prefWidth="323.0" text="0/0" textFill="#e9e4e4">
+                        <font>
+                           <Font name="Comic Sans MS Bold" size="50.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                     <Label layoutX="175.0" layoutY="115.0" text="Refresh" textFill="#e9e4e4">
+                        <font>
+                           <Font name="Corbel" size="96.0" />
+                        </font>
+                        <effect>
+                           <Blend mode="SCREEN" />
+                        </effect>
+                     </Label>
+                  </children>
+               </AnchorPane>
+               <Label layoutX="14.0" layoutY="310.0" text="Start here" textFill="#e9e4e4">
+                  <font>
+                     <Font name="Corbel" size="96.0" />
+                  </font>
+                  <effect>
+                     <Blend mode="SCREEN" />
+                  </effect>
+               </Label>
+               <Label layoutX="25.0" layoutY="423.0" text="To check-in, print bag tags, change seats, change flights..." textFill="#e9e4e4">
+                  <font>
+                     <Font name="Corbel" size="38.0" />
+                  </font>
+                  <effect>
+                     <Blend mode="SCREEN" />
+                  </effect>
+               </Label>
+            </children>
+         </AnchorPane>
+      </center>
+      <right>
+         <AnchorPane prefHeight="653.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+      </right>
+      <bottom>
+         <AnchorPane prefHeight="100.0" prefWidth="1203.0" styleClass="background" stylesheets="@../CSS/StyleSheet.css" BorderPane.alignment="CENTER">
+            <children>
+               <Button id="BT_CheckIn" fx:id="Button_Next" alignment="CENTER" contentDisplay="CENTER" layoutX="821.0" layoutY="12.0" mnemonicParsing="false" onAction="#Next" onMouseEntered="#Enter_Highlight" onMouseExited="#Exit_Highlight" prefHeight="67.0" prefWidth="354.0" text="Fast Check-In" textFill="#878787">
+                  <font>
+                     <Font name="Arial Rounded MT Bold" size="36.0" />
+                  </font>
+               </Button>
+               <Button id="Button_Time" fx:id="Button_Time" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="12.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="385.0" stylesheets="@../CSS/StyleSheet.css" textFill="#878787">
+                  <font>
+                     <Font name="Arial Rounded MT Bold" size="36.0" />
+                  </font>
+               </Button>
+               <ImageView fx:id="Admin" fitHeight="74.0" fitWidth="80.0" layoutX="14.0" layoutY="13.0" onMouseClicked="#Identify_Admin" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Pictures/admin.png" />
+                  </image>
+               </ImageView>
+            </children>
+         </AnchorPane>
+      </bottom>
+   </BorderPane>
+</AnchorPane>
