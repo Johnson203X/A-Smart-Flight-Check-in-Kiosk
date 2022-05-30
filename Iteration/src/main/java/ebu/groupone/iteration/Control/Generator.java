@@ -17,11 +17,11 @@ public class Generator extends Thread {
     /**
      * The Generate data size, default 2500. Too large will cause out of JVM memory
      */
-    public static final int MAX_GENERATE = 2500;
+    public static final int MAX_GENERATE = 200;
     /**
      * The Generate flight number size, default 10. Needs sufficient planes to match MAX_GENERATE, otherwise insufficient ticket for check-in
      */
-    public static final int MAX_PLANES = 10;
+    public static final int MAX_PLANES = 8;
     /**
      * Global Param Counter within the process of indicating the progress
      */
@@ -149,7 +149,7 @@ public class Generator extends Thread {
         String[] flightinfo = randomFlightNumber();
         Data.add(new Booking("1234567890", "Johnson", "12345678", BookingTimeIntial(),
                 flightinfo[4], randomMeal(), flightinfo[0], flightinfo[1], flightinfo[3],
-                "LHR", flightinfo[2], randomBelongings(), randomStatus(), flightinfo[5]));
+                "LHR", flightinfo[2], randomBelongings(), "Unchecked", flightinfo[5]));
         bookingIO.WriteOut(Data);
         //counter ++;
         for (int i = 0; i < MAX_GENERATE; i++) {

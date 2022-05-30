@@ -303,7 +303,7 @@ public class AdminController implements Initializable {
      * @return boolean
      */
     private boolean validate() {
-        if ((Account.getText().equals("")) && (Password.getText().equals(""))) {
+        if ((Account.getText().equals("root")) && (Password.getText().equals("root"))) {
             return true;
         } else {
             Alert();
