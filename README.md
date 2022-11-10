@@ -1,5 +1,5 @@
 # A-Smart-Flight-Check-in-Kiosk
-EBU6304–Software Engineering Group Project Group1
+Undergraduate Software Engineering Project for Course EBU6304–Software Engineering 
 
 ## Build Environment
 
